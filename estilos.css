@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0; /*margen externo*/
+  padding: 0; /*margen interno*/
+}
+
+/* header */
+
+.header-container-top {
+  background-color: #222222;
+  color: #f3f3f3;
+  font-size: 14px;
+  display: flex; /*pongo los hijos uno al lado del otro*/
+  justify-content: space-between; /*manda los hijos para los extremos*/
+  align-items: center; /*alinea horizontalmente*/
+  padding: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.header-lista {
+  list-style: none;
+  display: flex;
+  gap: 50px; /*espacio entre los hijos*/
+}
+
+.header-container-bottom {
+  background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.logo, .nosotros-logo {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 50;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 20px;
+}
+
+.front-logo {
+  color: #3c2313;
+}
+
+.nav-lista {
+  list-style: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-lista img{
+  height: 19px;
+}
+
+/* main */
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url("../img//bowl-and-pet-daities-on-green-background 1.png");
+  background-size: cover;
+  height: 900px;
+  justify-content: center;
+}
+
+.banner-mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  gap: 15px;
+  margin-right: 10px;
+  
+}
+
+.bienvenida {
+  background-color: white;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.destacado-producto-tipo {
+  color: #f3f3f3;
+  background-color: #F0A83E;
+  padding: 18px;
+  border-radius: 5px;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+
+
+.productos-destacados {
+  font-size: 45px;
+  align-self: center;
+}
+
+.productos-links {
+  display: flex;
+  gap: 20px;
+}
+
+
+.productos-imagenes {
+  display: flex;
+  gap: 20px;
+
+}  
+
+.producto-imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FBFAF6;
+}
+
+.precio {
+  color: #F0A83E;
+}
+
+
+.contactenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.contactenos h2 {
+  color: #3c2313;
+  font-size: 30px;
+}
+
+.datos-personales p {
+  color: white;
+  background-color: #3c2313;
+  margin: 10px;
+  padding: 15px;
+  font-size: 10px;
+  border-radius: 16px;
+  width: 300px;
+}
+
+.contactos-botones {
+  display: flex;
+  gap: 10px;
+}
+
+.gris {
+  color: white;
+  background-color: #8A8787;
+  border-radius: 16px;
+  padding: 8px 30px;
+}
+
+.naranja {
+  color: white;
+  background-color: #F0A83E;
+  border-radius: 16px;
+  padding: 8px 30px;
+}
+
+/*footer*/ 
+.suscripcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #F0A83E;
+  padding: 15px;
+  
+} 
+
+section.nosotros {
+  color: white;
+  background-color: #3c2313;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+
+}   
+
+
+
+.suscripcion-mensaje {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.suscripcion-mensaje {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.suscripcion-accion {
+  display: flex;
+  gap: 8px;
+}
+
+.suscripcion-correo {
+  color: black;
+  background-color: white;
+  font-size: 11px;
+  border-radius: 18px;
+  padding: 15px;
+  width: 300px;
+}
+
+.suscripcion-boton {
+  background-color: #3C2313;
+  font-size: 11px;
+  border-radius: 18px;
+  padding: 15px;
+}
+
+.cat-dog {
+  color: #F0A83E;
+} 
+
+.front-logo2 {
+  color: white;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  color: #8A8787
+}
+
+.derechos-reservados {
+  color: white;
+  background-color: #222222;
+  text-align: ;
+
+}
+.derechos-reservados {
+  left: 45%;
+  text-align: center;
+}
+
+.creditos {
+  background-color: #222222;
+}
+
+@media screen and (max-width: 480px) {
+
+  /* header */
+
+
+  /* main */
+  .banner {
+    background-size: cover;
+  }
+  .productos-imagenes {flex-direction: column;}
+  /* footer */
+  .suscripcion {flex-direction: column;}
+
+  section.nosotros {
+  flex-direction: column;
+  justify-content: center;}
+}
+  
+
+
+
